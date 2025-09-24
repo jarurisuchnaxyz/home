@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title & Description -->
+  <title>JaruriSuchna.xyz | मुख्य पृष्ठ</title>
+  <meta name="description" content="JaruriSuchna.xyz – छत्तीसगढ़ और भारत की नवीनतम सरकारी योजनाएं, नौकरियां और ऑनलाइन सेवाओं की जानकारी।">
+  <meta name="author" content="केवल निषाद">
+  <meta name="keywords" content="JaruriSuchna, सरकारी योजनाएं, नौकरी, ऑनलाइन सेवाएं, छत्तीसगढ़, डिजिटल सूचना">
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="JaruriSuchna | मुख्य पृष्ठ">
+  <meta property="og:description" content="JaruriSuchna.xyz – छत्तीसगढ़ और भारत की नवीनतम सरकारी योजनाएं, नौकरियां और ऑनलाइन सेवाओं की जानकारी।">
+  <meta property="og:image" content="https://jarurisuchna.xyz/og-image.jpg">
+  <meta property="og:url" content="https://jarurisuchna.xyz">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="JaruriSuchna | मुख्य पृष्ठ">
+  <meta name="twitter:description" content="JaruriSuchna.xyz – छत्तीसगढ़ और भारत की नवीनतम सरकारी योजनाएं, नौकरियां और ऑनलाइन सेवाओं की जानकारी।">
+  <meta name="twitter:image" content="https://jarurisuchna.xyz/twitter-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://jarurisuchna.xyz/favicon.ico" type="image/x-icon">
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "JaruriSuchna",
+    "url": "https://jarurisuchna.xyz",
+    "description": "JaruriSuchna.xyz – छत्तीसगढ़ और भारत की नवीनतम सरकारी योजनाएं, नौकरियां और ऑनलाइन सेवाओं की जानकारी।",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://jarurisuchna.xyz/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "JaruriSuchna",
+    "url": "https://jarurisuchna.xyz",
+    "logo": "https://jarurisuchna.xyz/logo.png",
+    "sameAs": [
+      "https://www.facebook.com/yourpage",
+      "https://www.instagram.com/yourprofile",
+      "https://twitter.com/yourprofile"
+    ],
+    "author": {
+      "@type": "Person",
+      "name": "केवल निषाद"
+    }
+  }
+  </script>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(-45deg, #ff9933, #ffffff, #880808, #ffffff);
+    background-size: 400% 400%;
+    animation: tirangaMove 10s ease infinite;
+    color: #000;
+  }
+  @keyframes tirangaMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 50px;
+    background: #000;
+  }
+  .profile-pic img { width:200px; height:200px; border-radius:50%; border:4px solid #1e90ff; box-shadow:0 0 20px #1e90ff; 
+    opacity: 0;
+  transform: scale(0.7);
+  animation: zoomIn 1.2s ease forwards;}
+  .right-content { flex:1; margin-left:40px; }
+  .intro h1 { font-size:36px; color:#1e90ff; margin:0;  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 1s ease forwards;
+  animation-delay: 1s;}
+  .intro h3 { font-size:22px; color:#fff200; margin:10px 0;  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 1s ease forwards;
+  animation-delay: 2s;  }
+  .intro p { font-size:16px; color:#ddd; font-weight:bold; margin-bottom:20px; }
+
+  nav ul { display:flex; gap:25px; list-style:none; padding:0; margin:0; }
+  nav ul li a { text-decoration:none; color:white; font-weight:bold; transition:0.3s;  }
+  nav ul li a:hover { color:#1e90ff; }
+  .menu-toggle { display:none; font-size:28px; cursor:pointer; color:#1e90ff; margin-bottom:10px; }
+
+  .services { display:none; text-align:center; padding:40px 20px; background:#161b22; }
+  .services h2 { color:#1e90ff; margin-bottom:20px; }
+  .service-buttons { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; }
+  .service-buttons button {
+    padding:12px 20px;
+    border:2px solid #1e90ff;
+    background:transparent;
+    color:white;
+    font-size:16px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+  }
+  .service-buttons button:hover { background:#1e90ff; color:black; }
+
+  .container { padding:20px; }
+  .posts-container { display:grid; grid-template-columns:repeat(auto-fit, minmax(400px,1fr)); gap:20px; }
+  .post-box { background:#fff; border-radius:12px; box-shadow:0px 2px 6px rgba(0,0,0,0.2); overflow:hidden; transition:transform 0.2s ease; }
+  .post-box:hover { transform:translateY(-5px); }
+  .post-box img { width:100%; height:220px; object-fit:contain; display:block; }
+  .post-title { padding:15px; font-size:18px; font-weight:bold; text-align:center; }
+
+  .social { margin-top:20px; display:flex; gap:25px; }
+  .social a { font-size:22px; width:45px; height:45px; display:flex; align-items:center; justify-content:center; border-radius:50%; color:white; transition:0.3s; }
+  .social a:nth-child(1) { background:#1877f2; }
+  .social a:nth-child(2) { background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+  .social a:nth-child(3) { background:#1da1f2; }
+  .social a:nth-child(4) { background:#ff0000; }
+  .social a:nth-child(5) { background:#25d366; }
+  .social a:hover { transform:scale(1.2); box-shadow:0 0 15px rgba(0,0,0,0.6); }
+
+  footer { background:#0f172a; color:#fff; padding:40px 20px; }
+  .footer-container { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; }
+  .footer-box h3 { margin-bottom:15px; font-size:18px; border-bottom:2px solid #38bdf8; display:inline-block; padding-bottom:5px; }
+  .footer-box ul { list-style:none; padding:0; }
+  .footer-box ul li { margin-bottom:10px; }
+  .footer-box ul li a { color:#e5e5e5; text-decoration:none; transition:0.3s; }
+  .footer-box ul li a:hover { color:#38bdf8; }
+  
+  .profile img { width:100%; border-radius:12px; margin-bottom:10px; object-fit: contain} 
+
+  @media (max-width:768px) {
+    header { flex-direction:column; align-items:center; text-align:center; }
+    .right-content { margin-left:0; }
+    .menu-toggle { display:block; }
+    nav ul { display:none; flex-direction:column; gap:15px; margin-top:10px; background:#0d1117; padding:15px; border-radius:10px; }
+    nav ul.active { display:flex; }
+    .intro h1 { font-size:32px; }
+    .intro h3 { font-size:20px; }
+    .intro p { font-size:16px; }
+    .footer-container { grid-template-columns:1fr; text-align:center; }
+    .post-box img { height:180px; }
+    .post-title { font-size:16px; }
+  }
+  @media (max-width:480px) { .post-box img { height:150px;object-fit: contain; } .post-title { font-size:15px; }  }
+  @keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.7); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Search bar container */
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+
+/* Search input box */
+.search-input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  width: 220px;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
+/* Search button */
+.search-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .search-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .search-btn {
+    width: 100%;
+  }
+}
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="profile-pic"><img src="https://i.ibb.co/B2gfGx2w/photo.jpg" alt="Keval Nishad">  </div>
+  <div class="right-content">
+    <div class="intro">
+      <h1>KEVAL NISHAD</h1>
+      <h3>DIGITAL CREATER</h3>
+      <p>यहाँ आपको <b>सरकारी योजनाएँ</b>, <b>CSC सेवाएँ</b>, <b>नौकरी अपडेट्स</b> और <b>नवीनतम न्यूज़</b> की सही जानकारी मिलेगी।</p>
+    </div>
+    <nav>
+      <span class="menu-toggle">☰ Menu</span>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#"> CSC</a></li>
+         <li><a href="#">नौकरी  </a></li>
+          <li><a href="#" id="yojnaBtn">योजना </a></li> 
+             <li><a href="#">About</a></li>
+             <script>
+  document.querySelector(".menu-toggle").addEventListener("click", function () {
+    document.querySelector("nav ul").classList.toggle("active");
+  });
+  document.getElementById("serviceLink").addEventListener("click", function(e) {
+    e.preventDefault();
+    let section = document.getElementById("servicesSection");
+    section.style.display = section.style.display === "block" ? "none" : "block";
+  });
+
+  function showRecentPosts(data) {
+    const entries = data.feed.entry || [];
+    const container = document.querySelector(".posts-container");
+    container.innerHTML = "";
+    entries.forEach(entry => {
+      const title = entry.title.$t;
+      const link = entry.link.find(l => l.rel === "alternate").href;
+      let img = "https://via.placeholder.com/400x220";
+      if(entry.media$thumbnail) img = entry.media$thumbnail.url.replace("s72-c","s600");
+      else if(entry.content && entry.content.$t.match(/<img[^>]+src="([^">]+)"/)) img = entry.content.$t.match(/<img[^>]+src="([^">]+)"/)[1];
+      let box = document.createElement("div");
+      box.className = "post-box";
+      box.innerHTML = `<a href="${link}" target="_blank"><img src="${img}" alt="${title}"><div class="post-title">${title}</div></a>`;
+      container.appendChild(box);
+    });
+  }
+</script>
+
+<script src="https://www.jarurisuchna.xyz/feeds/posts/default?alt=json-in-script&max-results=12&callback=showRecentPosts"> </script>
+
+        
+      <ul id="extraBtns" style="display:none; list-style:none; padding-left:0; margin-top:6px;">
+  <li style="margin-top:6px;">
+    <button style="
+      padding:8px 14px;
+      border:1px solid #2b6cb0;
+      background:#fff;
+      color:#2b6cb0;
+      border-radius:6px;
+      cursor:pointer;
+      width:150px;
+      text-align:left;
+    " id="sram" onclick="function()">
+      श्रम विभाग
+    </button>
+  </li>
+  <li style="margin-top:6px;">
+    <button style="
+      padding:8px 14px;
+      border:1px solid #2b6cb0;
+      background:#fff;
+      color:#2b6cb0;
+      border-radius:6px;
+      cursor:pointer;
+      width:150px;
+      text-align:left;
+    ">
+      Govt योजना
+    </button>
+  </li>
+</ul>
+
+<script>
+  const yojnaBtn = document.getElementById("yojnaBtn");
+  const extraBtns = document.getElementById("extraBtns");
+
+  yojnaBtn.addEventListener("click", () => {
+    if (extraBtns.style.display === "none") {
+      extraBtns.style.display = "block";
+      yojnaBtn.textContent = "योजना ▲";
+    } else {
+      extraBtns.style.display = "none";
+      yojnaBtn.textContent = "योजना ▼";
+    }
+  });
+</script>
+
+
+
+
+
+
+<!-- आपके बाकी का “posts” और feed स्क्रिप्ट यहाँ नीचे रही जाए -->
+
+
+
+    </nav>
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+     
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="https://wa.me/919876543210" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+ 
+
+<div class="search-container">
+  <input type="text" placeholder="Search / खोजें..." class="search-input" id="searchBar">
+  <button class="search-btn" onclick="doSearch()" >Search करें</button>
+</div>
+
+</header>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const btn = document.querySelector(".menu-toggle");
+      const menuUl = document.querySelector("nav ul");
+      console.log("Menu toggle button:", btn);
+      console.log("Menu ul:", menuUl);
+      btn.addEventListener("click", function () {
+        menuUl.classList.toggle("active");
+      });
+    });
+  </script>
+ 
+  </script>
+
+
+<!-- No Result Message -->
+<p id="noResult" style="display:none; color:red; font-weight:bold;">❌ कोई परिणाम नहीं मिला</p>
+
+<script>
+  const searchBtn = document.querySelector(".search-btn");
+  const searchBar = document.getElementById("searchBar");
+  const posts = document.querySelectorAll(".post");
+  const noResult = document.getElementById("noResult");
+
+  function doSearch() {
+    let keyword = searchBar.value.toLowerCase().trim();
+    let found = false;
+
+    posts.forEach(post => {
+      let tags = post.getAttribute("data-tags").toLowerCase();
+      let text = post.innerText.toLowerCase();
+
+      if (tags.includes(keyword) || text.includes(keyword)) {
+        post.classList.remove("hidden");
+        found = true;
+      } else {
+        post.classList.add("hidden");
+      }
+    });
+
+    // अगर कुछ भी नहीं मिला तो message show करो
+    if (!found) {
+      noResult.style.display = "block";
+    } else {
+      noResult.style.display = "none";
+    }
+  }
+
+  // Button click पर search
+  searchBtn.addEventListener("click", doSearch);
+
+  // Optional: Enter दबाने पर भी search
+  searchBar.addEventListener("keyup", function(e) {
+    if (e.key === "Enter") {
+      doSearch();
+    }
+  });
+</script>
+
+
+
+<div class="container" id="container">
+  <h2>हाल की पोस्ट</h2>
+  <div class="posts-container"></div>
+</div>
+
+<script>
+document.querySelector(".menu-toggle").addEventListener("click", function () {
+  document.querySelector("nav ul").classList.toggle("active");
+});
+document.getElementById("serviceLink").addEventListener("click", function(e) {
+  e.preventDefault();
+  let section = document.getElementById("servicesSection");
+  section.style.display = section.style.display === "block" ? "none" : "block";
+});
+
+// 🔹 Live Blogger Posts
+function showRecentPosts(data) {
+  const entries = data.feed.entry || [];
+  const container = document.querySelector(".posts-container");
+  container.innerHTML = "";
+  entries.forEach(entry => {
+    const title = entry.title.$t;
+    const link = entry.link.find(l => l.rel === "alternate").href;
+    let img = "https://via.placeholder.com/400x220";
+    if(entry.media$thumbnail) img = entry.media$thumbnail.url.replace("s72-c","s600");
+    else if(entry.content && entry.content.$t.match(/<img[^>]+src="([^">]+)"/)) img = entry.content.$t.match(/<img[^>]+src="([^">]+)"/)[1];
+    let box = document.createElement("div");
+    box.className = "post-box";
+    box.innerHTML = `<a href="${link}" target="_blank"><img src="${img}" alt="${title}"><div class="post-title">${title}</div></a>`;
+    container.appendChild(box);
+  });
+}
+</script>
+<script src="https://www.jarurisuchna.xyz/feeds/posts/default?alt=json-in-script&max-results=12&callback=showRecentPosts"> </script>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-box">
+      <h3>Recent Posts</h3>
+      <ul id="recent-posts"></ul>
+    </div>
+    <div class="footer-box">
+      <h3>Popular Posts</h3>
+      <ul id="popular-posts"></ul>
+    </div>
+    <div class="footer-box">
+      <h3>हमारे बारे में</h3>
+      <div class="profile">
+        <a href="https://ibb.co/60k0Lfjn"><img src="https://i.ibb.co/F4F4CjRx/Myphoto.jpg" alt="Myphoto" border="0"></a>
+        <p><b>नाम:</b> केवल निषाद</p>
+        <p><b>कार्य:</b> Digital Social Awareness Creator</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript">
+// Recent Posts
+function showRecentPosts(json) {
+  let html = "";
+  for (let i = 0; i < 3 && i < json.feed.entry.length; i++) {
+    let entry = json.feed.entry[i];
+    let title = entry.title.$t;
+    let link = entry.link.find(l => l.rel === "alternate").href;
+
+    // Thumbnail
+    let thumb = "";
+    if ("media$thumbnail" in entry) {
+      thumb = entry.media$thumbnail.url.replace("s72-c", "s150-c");
+    } else {
+      thumb = "https://via.placeholder.com/150x100.png?text=No+Image";
+    }
+
+    html += `
+      <li style="display:flex;align-items:center;margin-bottom:10px;">
+        <img src="${thumb}" alt="${title}" style="width:60px;height:60px;object-fit:cover;border-radius:6px;margin-right:10px;">
+        <a href="${link}" target="_blank" style="color:#00bcd4;text-decoration:none;">${title}</a>
+      </li>`;
+  }
+  document.getElementById("recent-posts").innerHTML = html;
+}
+
+// Popular Posts (yojna tag वाले)
+function showPopularPosts(json) {
+  let html = "";
+  for (let i = 0; i < 3 && i < json.feed.entry.length; i++) {
+    let entry = json.feed.entry[i];
+    let title = entry.title.$t;
+    let link = entry.link.find(l => l.rel === "alternate").href;
+
+    // Thumbnail
+    let thumb = "";
+    if ("media$thumbnail" in entry) {
+      thumb = entry.media$thumbnail.url.replace("s72-c", "s150-c");
+    } else {
+      thumb = "https://via.placeholder.com/150x100.png?text=No+Image";
+    }
+
+    html += `
+      <li style="display:flex;align-items:center;margin-bottom:10px;">
+        <img src="${thumb}" alt="${title}" style="width:60px;height:60px;object-fit:cover;border-radius:6px;margin-right:10px;">
+        <a href="${link}" target="_blank" style="color:#00bcd4;text-decoration:none;">${title}</a>
+      </li>`;
+  }
+  document.getElementById("popular-posts").innerHTML = html;
+}
+</script>
+
+<!-- Recent Posts JSONP -->
+<script src="https://www.jarurisuchna.xyz/feeds/posts/default?alt=json-in-script&max-results=3&callback=showRecentPosts"></script>
+
+<!-- Popular Posts JSONP (only 'yojna' tag वाले) -->
+<script src="https://www.jarurisuchna.xyz/feeds/posts/default/-/yojana?alt=json-in-script&max-results=3&callback=showPopularPosts"></script>
+
+
+</body>
+</html>
