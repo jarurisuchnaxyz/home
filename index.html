@@ -314,23 +314,13 @@
  
 
 <div class="search-container">
-  <input type="text" placeholder="Search / खोजें..." class="search-input" id="searchBar">
+  <input type="text" placeholder="Search / खोजें..." class="search-input" id="searchInput">
   <button class="search-btn" onclick="doSearch()" >Search करें</button>
 </div>
 
 </header>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const btn = document.querySelector(".menu-toggle");
-      const menuUl = document.querySelector("nav ul");
-      console.log("Menu toggle button:", btn);
-      console.log("Menu ul:", menuUl);
-      btn.addEventListener("click", function () {
-        menuUl.classList.toggle("active");
-      });
-    });
-  </script>
+<script> const searchInput = document.getElementById('searchInput'); searchInput.addEventListener('input', function() { const query = this.value.toLowerCase(); const cards = document.querySelectorAll('.grid .card'); cards.forEach(card => { const title = card.querySelector('.title').innerText.toLowerCase(); // कोई भी word match होना चाहिए const queryWords = query.split(' ').filter(Boolean); let match = queryWords.length === 0 ? true : queryWords.some(word => title.includes(word)); card.style.display = match ? 'block' : 'none'; }); }); </script>
  
   </script>
 
@@ -497,5 +487,6 @@ function showPopularPosts(json) {
 
 </body>
 </html>
+
 
 
