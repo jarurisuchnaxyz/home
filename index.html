@@ -314,60 +314,51 @@
  
 
 <div class="search-container">
-  <input type="text" placeholder="Search / खोजें..." class="search-input" id="searchInput">
-  <button class="search-btn" onclick="doSearch()" >Search करें</button>
+   <input type="text" id="searchInput" placeholder="कृपया हिन्दी मे खोजे  / सर्च " />
 </div>
 
 </header>
 
-<script> const searchInput = document.getElementById('searchInput'); searchInput.addEventListener('input', function() { const query = this.value.toLowerCase(); const cards = document.querySelectorAll('.grid .card'); cards.forEach(card => { const title = card.querySelector('.title').innerText.toLowerCase(); // कोई भी word match होना चाहिए const queryWords = query.split(' ').filter(Boolean); let match = queryWords.length === 0 ? true : queryWords.some(word => title.includes(word)); card.style.display = match ? 'block' : 'none'; }); }); </script>
- 
-  </script>
+<!-- Search Box -->
 
 
-<!-- No Result Message -->
-<p id="noResult" style="display:none; color:red; font-weight:bold;">❌ कोई परिणाम नहीं मिला</p>
+<style>
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#searchInput {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: box-shadow .2s ease;
+}
+#searchInput:focus {
+  box-shadow: 0 0 8px rgba(11,116,218,0.6);
+  border-color: #0b74da;
+}
+</style>
 
 <script>
-  const searchBtn = document.querySelector(".search-btn");
-  const searchBar = document.getElementById("searchBar");
-  const posts = document.querySelectorAll(".post");
-  const noResult = document.getElementById("noResult");
-
-  function doSearch() {
-    let keyword = searchBar.value.toLowerCase().trim();
-    let found = false;
-
-    posts.forEach(post => {
-      let tags = post.getAttribute("data-tags").toLowerCase();
-      let text = post.innerText.toLowerCase();
-
-      if (tags.includes(keyword) || text.includes(keyword)) {
-        post.classList.remove("hidden");
-        found = true;
-      } else {
-        post.classList.add("hidden");
-      }
-    });
-
-    // अगर कुछ भी नहीं मिला तो message show करो
-    if (!found) {
-      noResult.style.display = "block";
-    } else {
-      noResult.style.display = "none";
-    }
-  }
-
-  // Button click पर search
-  searchBtn.addEventListener("click", doSearch);
-
-  // Optional: Enter दबाने पर भी search
-  searchBar.addEventListener("keyup", function(e) {
-    if (e.key === "Enter") {
-      doSearch();
-    }
+const searchInput = document.getElementById('searchInput');
+searchInput.addEventListener('input', function() {
+  const query = this.value.toLowerCase();
+  const cards = document.querySelectorAll('.grid .card');
+  
+  cards.forEach(card => {
+    const title = card.querySelector('.title').innerText.toLowerCase();
+    // कोई भी word match होना चाहिए
+    const queryWords = query.split(' ').filter(Boolean);
+    let match = queryWords.length === 0 ? true : queryWords.some(word => title.includes(word));
+    card.style.display = match ? 'block' : 'none';
   });
+});
 </script>
+
 
 
 
@@ -487,6 +478,7 @@ function showPopularPosts(json) {
 
 </body>
 </html>
+
 
 
 
