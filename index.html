@@ -249,6 +249,7 @@
       <h3>DIGITAL CREATER</h3>
       <p>यहाँ आपको <b>सरकारी योजनाएँ</b>, <b>CSC सेवाएँ</b>, <b>नौकरी अपडेट्स</b> और <b>नवीनतम न्यूज़</b> की सही जानकारी मिलेगी।</p>
     </div>
+
 <style>
   * {
     margin: 0;
@@ -259,65 +260,54 @@
   nav {
     background-color: #083c9a;
     color: white;
-    padding: 10px;
+    padding: 10px 0;
   }
 
   nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* मोबाइल पर लाइन ब्रेक देगा */
     gap: 20px;
-    transition: all 0.3s ease;
   }
 
   nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 17px;
+    transition: color 0.3s ease;
   }
 
-  .menu-toggle {
-    display: none;
-    cursor: pointer;
-    font-size: 22px;
-    user-select: none;
+  nav ul li a:hover {
+    color: #ffd700;
   }
 
   /* मोबाइल व्यू के लिए */
   @media (max-width: 768px) {
-    .menu-toggle {
-      display: block;
-      text-align: center;
-      margin-bottom: 8px;
-    }
-
     nav ul {
       flex-direction: column;
       align-items: center;
-      background: #083c9a;
-      max-height: 0;
-      overflow: hidden;
+      gap: 10px;
     }
 
-    nav ul.show {
-      max-height: 400px; /* जितने links हों उतनी height */
-      transition: max-height 0.4s ease-in-out;
+    nav ul li a {
+      font-size: 18px;
     }
   }
 </style>
 
 
-
-<nav>
-  <span class="menu-toggle">☰ Menu</span>
-  <ul id="menuList">
-    <li><a href="https://jarurisuchnaxyz.github.io/home/">Home</a></li>
-    <li><a href="https://www.jarurisuchna.xyz/search/label/csc">CSC</a></li>
-    <li><a href="https://jarurisuchnaxyz.github.io/job/">नौकरी</a></li>
-    <li><a href="https://jarurisuchnaxyz.github.io/schem/">योजना</a></li>
-    <li><a href="https://www.jarurisuchna.xyz/2025/05/animated-about-page-body-margin-0-font.html">About</a></li>
-  </ul>
-</nav>
+<body>
+  <nav>
+    <ul>
+      <li><a href="https://jarurisuchnaxyz.github.io/home/">Home</a></li>
+      <li><a href="https://www.jarurisuchna.xyz/search/label/csc">CSC</a></li>
+      <li><a href="https://jarurisuchnaxyz.github.io/job/">नौकरी</a></li>
+      <li><a href="https://jarurisuchnaxyz.github.io/schem/">योजना</a></li>
+      <li><a href="https://www.jarurisuchna.xyz/2025/05/animated-about-page-body-margin-0-font.html">About</a></li>
+    </ul>
+  </nav>
 
 
         <script>
@@ -532,6 +522,7 @@ function showPopularPosts(json) {
 
 </body>
 </html>
+
 
 
 
