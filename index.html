@@ -319,20 +319,7 @@
   </ul>
 </nav>
 
-<script>
-  const toggle = document.querySelector(".menu-toggle");
-  const menu = document.getElementById("menuList");
 
-  toggle.addEventListener("click", () => {
-    menu.classList.toggle("show");
-    // आइकन बदलना (☰ ↔ ✖)
-    if (menu.classList.contains("show")) {
-      toggle.textContent = "✖ Close";
-    } else {
-      toggle.textContent = "☰ Menu";
-    }
-  });
-</script>
         <script>
   function showRecentPosts(data) {
     const entries = data.feed.entry || [];
@@ -545,6 +532,7 @@ function showPopularPosts(json) {
 
 </body>
 </html>
+
 
 
 
